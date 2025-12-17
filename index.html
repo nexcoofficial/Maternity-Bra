@@ -3,735 +3,743 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nathalie Ice Silk Maternity Bra - Nyaman & Adem Sepanjang Hari</title>
-    <meta name="description" content="Bra menyusui premium dengan Ice Silk Technology yang menjaga kulit tetap kering dan nyaman dengan sensasi dingin sepanjang hari. Desain travel friendly dengan nursing clip praktis.">
-    <meta property="og:title" content="Nathalie Ice Silk Maternity Bra">
-    <meta property="og:description" content="Bra menyusui premium dengan teknologi canggih untuk kenyamanan maksimal ibu menyusui.">
-    <meta property="og:image" content="https://flymannathalie.com/cdn/shop/files/cover_cfd75681-0340-45c5-a607-312bda5929c0.jpg?v=1743226064&width=800">
-    <meta property="og:url" content="https://flymannathalie.com/maternity-bra">
-    <meta name="twitter:card" content="summary_large_image">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Nathalie Ice Silk Maternity Bra | Flyman </title>
+    <link rel="icon" type="image/png" href="https://cdn.orderonline.id/uploads/images_7068631764660292741.png">
+    <link rel="apple-touch-icon" href="https://cdn.orderonline.id/uploads/images_7068631764660292741.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        deepblue: '#003366',
-                        oceanblue: '#0066cc',
-                        skyblue: '#87ceeb',
-                        foamwhite: '#f0f8ff',
-                        coral: '#ff6b6b',
-                    },
-                    fontFamily: {
-                        heading: ['Poppins', 'sans-serif'],
-                        body: ['Inter', 'sans-serif'],
-                    },
-                }
-            }
-        }
-    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        .glass-effect {
-            background: rgba(255, 255, 255, 0.15);
-            backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.18);
+        :root {
+            --primary: #EE4D2D; /* Shopee Orange */
+            --text: #222;
+            --gray: #757575;
+            --bg: #f5f5f5;
+            --white: #fff;
+            --star-yellow: #ffc107; /* Standard Yellow for Stars */
+            --font-heading: 'Playfair Display', serif;
+            --font-body: 'Inter', sans-serif;
+            --btn-gradient: linear-gradient(180deg, #ee4d2d 0%, #d73211 100%);
         }
-        .hero-gradient {
-            background: linear-gradient(135deg, rgba(0, 51, 102, 0.85) 0%, rgba(0, 102, 204, 0.8) 50%, rgba(135, 206, 235, 0.7) 100%);
+        * { margin:0; padding:0; box-sizing:border-box; }
+        body { font-family: var(--font-body); background: var(--bg); color: var(--text); padding-bottom: 80px; }
+        .container { max-width: 480px; margin: 0 auto; background: var(--white); min-height: 100vh; box-shadow: 0 0 20px rgba(0,0,0,0.05); position: relative; }
+        
+        /* Product Gallery Swiper - FORCED HEIGHT FIX */
+        .product-swiper { width: 100%; height: 480px; background: #fff; }
+        .product-swiper .swiper-slide { width: 100%; height: 100%; display: flex; justify-content: center; align-items: center; overflow: hidden; }
+        .product-swiper img { width: 100%; height: 100%; object-fit: cover; }
+        @media(max-width:480px) { .product-swiper { height: 100vw; } }
+        
+        /* Flash Sale Timer */
+        .flash-sale { 
+            background: linear-gradient(90deg, #ef3313 0%, #d71016 100%); 
+            color: #fff; padding: 10px 15px; display: flex; justify-content: space-between; align-items: center; 
         }
-        .feature-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        .fs-left { display: flex; flex-direction: column; }
+        .fs-title { font-weight: 700; font-size: 1.1rem; font-style: italic; text-transform: uppercase; }
+        .fs-timer { display: flex; align-items: center; gap: 5px; font-size: 0.8rem; }
+        .fs-box { background: #000; color: #fff; padding: 2px 4px; border-radius: 2px; font-weight: 700; min-width: 22px; text-align: center; }
+
+        /* Product Info */
+        .p-info { padding: 15px; border-bottom: 10px solid #f5f5f5; }
+        .p-price { font-size: 1.5rem; color: var(--primary); font-weight: 600; display: flex; align-items: center; gap: 10px; }
+        .p-price .old { font-size: 0.9rem; color: var(--gray); text-decoration: line-through; font-weight: 400; }
+        .p-name { font-size: 1.05rem; margin: 8px 0; font-weight: 500; line-height: 1.4; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+        
+        /* Shopee Specific Stats Layout */
+        .p-stats-row { display: flex; align-items: center; font-size: 0.85rem; color: #555; margin-top: 8px; }
+        .stat-item { padding: 0 10px; position: relative; display: flex; align-items: center; gap: 4px; }
+        .stat-item:first-child { padding-left: 0; color: var(--primary); }
+        .stat-item:not(:last-child)::after {
+            content: ""; position: absolute; right: 0; top: 50%; transform: translateY(-50%);
+            width: 1px; height: 12px; background: #ddd;
         }
-        .testimonial-card {
-            transition: all 0.3s ease;
+        
+        /* Variants - SCROLLABLE HORIZONTAL (Fix 1) */
+        .variant-section { padding: 15px; border-bottom: 1px solid #f5f5f5; }
+        .section-label { font-weight: 600; margin-bottom: 10px; display: block; font-size: 0.95rem; }
+        
+        .v-grid { 
+            display: flex; 
+            overflow-x: auto; 
+            gap: 10px; 
+            padding-bottom: 5px;
+            scroll-behavior: smooth;
+            -webkit-overflow-scrolling: touch; /* iOS Momentum */
         }
-        .testimonial-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-        }
-        .testimonial-image {
-            height: 200px;
-            width: 100%;
-            object-fit: cover;
-            border-radius: 8px;
+        .v-grid::-webkit-scrollbar { height: 4px; }
+        .v-grid::-webkit-scrollbar-thumb { background: #eee; border-radius: 4px; }
+
+        .v-card {
+            flex: 0 0 80px; /* Fixed width */
+            border: 1px solid #e0e0e0;
+            border-radius: 4px;
             cursor: pointer;
-            transition: transform 0.3s ease;
-        }
-        .testimonial-image:hover {
-            transform: scale(1.02);
-        }
-        .gallery-image {
-            transition: all 0.3s ease;
-            cursor: pointer;
-        }
-        .gallery-image:hover {
-            transform: scale(1.03);
-        }
-        .sticky-cta {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            z-index: 50;
-            transform: translateY(100%);
-            transition: transform 0.3s ease;
-        }
-        .sticky-cta.show {
-            transform: translateY(0);
-        }
-        .price-tag {
+            overflow: hidden;
+            background: #fff;
+            transition: all 0.2s;
             position: relative;
-            display: inline-block;
         }
-        .price-tag::before {
-            content: "";
-            position: absolute;
-            top: 50%;
-            left: 0;
-            right: 0;
-            height: 2px;
-            background: #ff6b6b;
-            transform: rotate(-5deg);
+        .v-card img { width: 100%; height: 80px; object-fit: cover; display: block; }
+        .v-card.no-img { height: 40px; display: flex; align-items: center; justify-content: center; background: #f9f9f9; }
+        .v-card span { 
+            display: block; font-size: 0.75rem; text-align: center; padding: 4px 2px; 
+            white-space: nowrap; overflow: hidden; text-overflow: ellipsis; color: #333;
         }
-        .scroll-fade {
-            opacity: 0;
-            transform: translateY(20px);
-            transition: opacity 0.6s ease, transform 0.6s ease;
+        .v-card:hover { border-color: var(--primary); }
+        .v-card.active { border-color: var(--primary); background: #fff5f2; }
+        .v-card.active::after {
+            content: '✓'; position: absolute; top: 0; right: 0;
+            background: var(--primary); color: #fff; font-size: 8px;
+            padding: 1px 4px; border-bottom-left-radius: 4px;
         }
-        .scroll-fade.show {
-            opacity: 1;
-            transform: translateY(0);
+
+        /* Shop Info Section */
+        .shop-info { padding: 15px; border-bottom: 10px solid #f5f5f5; display: flex; align-items: center; gap: 12px; }
+        .shop-avatar { width: 50px; height: 50px; border-radius: 50%; border: 1px solid #eee; object-fit: cover; }
+        .shop-details { display: flex; flex-direction: column; justify-content: center; }
+        .shop-name { font-weight: 600; font-size: 1rem; color: #000; }
+        .shop-active { font-size: 0.75rem; color: #757575; display: flex; align-items: center; gap: 4px; }
+        .shop-active::before { content: ""; width: 6px; height: 6px; background: #00bfa5; border-radius: 50%; display: inline-block; }
+
+        /* Delivery Guarantee (Updated: Clean) */
+        .delivery-bar { 
+            padding: 12px 15px; background: #fff; border-bottom: 10px solid #f5f5f5; 
+            display: flex; align-items: center; gap: 10px; font-size: 0.9rem; color: #00bfa5;
         }
-        .lightbox {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.9);
-            z-index: 1000;
-            justify-content: center;
-            align-items: center;
+        .delivery-icon { font-size: 1.1rem; }
+        .delivery-text { color: #333; font-size: 0.85rem; }
+
+        /* Featured Gallery (Lifestyle) - Updated to Grid 2 Column */
+        .featured-gallery { padding: 15px; border-bottom: 1px solid #eee; }
+        .fg-grid { 
+            display: grid; 
+            grid-template-columns: 1fr 1fr; /* 2 Columns */
+            gap: 8px; 
         }
+        .fg-item { 
+            width: 100%; 
+            aspect-ratio: 1/1; /* Square images */
+            border-radius: 4px; 
+            overflow: hidden; 
+        }
+        .fg-item img { width: 100%; height: 100%; object-fit: cover; }
+
+        /* Accordions */
+        .accordion { border-bottom: 10px solid #f5f5f5; }
+        .acc-item { border-bottom: 1px solid #f5f5f5; }
+        .acc-header { 
+            padding: 15px; display: flex; justify-content: space-between; align-items: center; 
+            font-size: 0.95rem; color: #333; font-weight: 500; cursor: pointer; background: #fff;
+        }
+        .acc-header:hover { background: #fafafa; }
+        .acc-content { 
+            display: none; padding: 0 15px 15px 15px; font-size: 0.9rem; color: #555; line-height: 1.5; 
+            animation: slideDown 0.3s ease-out;
+        }
+        .acc-content.open { display: block; }
+        @keyframes slideDown { from { opacity: 0; transform: translateY(-10px); } to { opacity: 1; transform: translateY(0); } }
+
+        /* Spec Table Style */
+        .spec-row { display: flex; margin-bottom: 8px; }
+        .spec-label { color: #888; width: 120px; flex-shrink: 0; font-size: 0.85rem; }
+        .spec-val { color: #333; font-size: 0.85rem; word-break: break-word; }
+
+        /* Reviews (Shopee Style) */
+        .review-section { padding: 15px; }
+        .review-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; }
+        .r-item { border-bottom: 1px solid #eee; padding: 15px 0; }
+        .r-user { display: flex; gap: 10px; margin-bottom: 8px; }
+        .r-avatar { width: 32px; height: 32px; border-radius: 50%; background: #ddd; object-fit: cover; }
+        .r-meta div { font-size: 0.8rem; color: var(--gray); }
+        .r-rating { color: var(--star-yellow); font-size: 0.7rem; margin: 2px 0; display:flex; gap:2px; }
+        .r-text { font-size: 0.9rem; margin-bottom: 10px; line-height: 1.4; white-space: pre-line; }
+        .r-media-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 5px; }
+        .r-media-item { aspect-ratio: 1; border-radius: 4px; overflow: hidden; position: relative; cursor: pointer; border: 1px solid #f0f0f0; }
+        .r-media-item img, .r-media-item video { width: 100%; height: 100%; object-fit: cover; }
+        
+        /* Lightbox Custom */
+        .lightbox-overlay {
+            display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0,0,0,0.85); z-index: 9999; 
+            justify-content: center; align-items: center;
+            opacity: 0; transition: opacity 0.3s ease;
+        }
+        .lightbox-overlay.active { display: flex; opacity: 1; }
+        
         .lightbox-content {
-            max-width: 90%;
-            max-height: 90%;
+            position: relative; width: 90%; max-width: 400px; 
+            background: transparent; padding: 0;
+            display: flex; justify-content: center; align-items: center;
         }
+        
+        .lightbox-media {
+            max-width: 100%; max-height: 70vh; 
+            border-radius: 8px; box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+            object-fit: contain; background: #000;
+        }
+        
         .lightbox-close {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            color: white;
-            font-size: 30px;
-            cursor: pointer;
+            position: absolute; top: -40px; right: 0;
+            color: #fff; font-size: 24px; cursor: pointer;
+            width: 30px; height: 30px; text-align: center; line-height: 30px;
+            background: rgba(255,255,255,0.2); border-radius: 50%;
         }
-        .video-container {
-            position: relative;
-            padding-bottom: 56.25%;
-            height: 0;
-            overflow: hidden;
+
+        /* Order Confirmation Box - PROFESSIONAL UPDATE */
+        .order-confirm-box {
+            background: #f8f9fa; border: 1px solid #e9ecef;
+            color: #212529; padding: 12px 16px; border-radius: 8px; margin-bottom: 20px;
+            display: none; /* Hidden by default */
+            align-items: center; gap: 15px; 
+            box-shadow: 0 2px 5px rgba(0,0,0,0.03);
         }
-        .video-container iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
+        .oc-thumb { 
+            width: 56px; height: 56px; object-fit: cover; border-radius: 6px; 
+            background: #fff; border: 1px solid #eee; flex-shrink: 0;
         }
-        .testimonial-video {
-            position: relative;
-            padding-bottom: 56.25%;
-            height: 0;
-            overflow: hidden;
-            border-radius: 8px;
+        .oc-content { flex: 1; min-width: 0; }
+        .oc-product-name { font-weight: 600; font-size: 0.95rem; line-height: 1.3; color: #000; margin-bottom: 2px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+        .oc-variant-name { font-size: 0.85rem; color: #555; background: #e9ecef; padding: 2px 8px; border-radius: 4px; display: inline-block; }
+
+        /* Bottom Bar */
+        .bottom-bar { 
+            position: fixed; bottom: 0; left: 50%; transform: translateX(-50%); width: 100%; max-width: 480px; 
+            background: #fff; padding: 10px; display: flex; gap: 10px; border-top: 1px solid #eee; z-index: 100;
         }
-        .testimonial-video video {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
+        .btn-buy { 
+            flex: 1; background: var(--btn-gradient); color: #fff; border: none; padding: 12px; 
+            border-radius: 4px; font-weight: 600; font-size: 1rem; cursor: pointer; text-align: center; text-decoration: none; 
+            box-shadow: 0 4px 6px rgba(238, 77, 45, 0.2);
         }
-        .star-rating {
-            color: #FFD700;
-            font-size: 1.2rem;
+        .order-section { margin-top: 20px; padding: 20px; background: #fff; border-top: 10px solid #f5f5f5; padding-bottom: 80px; }
+
+        /* Social Proof */
+        .social-popup {
+            position: fixed; top: 80px; right: 10px; background: rgba(255,255,255,0.98);
+            padding: 10px 15px; border-radius: 30px; box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+            display: flex; align-items: center; gap: 10px; z-index: 999;
+            transform: translateX(120%); transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            max-width: 90%;
         }
-        .countdown-item {
-            min-width: 60px;
-        }
-        @media (max-width: 768px) {
-            .countdown-item {
-                min-width: 40px;
-            }
-        }
+        .social-popup.show { transform: translateX(0); }
+        .sp-avatar { width: 36px; height: 36px; border-radius: 50%; object-fit: cover; border: 2px solid #fff; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        .sp-info div { line-height: 1.2; }
     </style>
 </head>
-<body class="font-body text-gray-800 bg-foamwhite" style="font-family: 'Inter', sans-serif;">
-    <!-- Navigation -->
-    <nav class="bg-white shadow-md sticky top-0 z-40">
-        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
-            <div class="flex items-center">
-                <img src="https://flymannathalie.com/cdn/shop/files/logo_new.png?v=1724814606&width=270" alt="Nathalie Logo" class="h-10">
+<body>
+    <div class="container">
+        <!-- Product Images 1:1 -->
+        <div class="swiper product-swiper">
+            <div class="swiper-wrapper" id="mainGallery">
+                <div class="swiper-slide"><video controls playsinline webkit-playsinline src="https://down-zl-sg.vod.susercontent.com/api/v4/11110105/mms/id-11110105-6knaq-m8imz2b3ledpc2.16000031744520455.mp4" style="width:100%; height:100%; object-fit:contain; background:#000;"></video></div><div class="swiper-slide"><img id="mainImage" src="https://flymannathalie.com/cdn/shop/files/cover_cfd75681-0340-45c5-a607-312bda5929c0.jpg?v=1743226064&width=600" alt="Main"></div><div class="swiper-slide"><img src="https://down-id.img.susercontent.com/file/id-11134207-7ra0u-mbvreqt5jxn8e0.webp" alt="Gallery"></div><div class="swiper-slide"><img src="https://down-id.img.susercontent.com/file/id-11134207-7ra0t-mbvreqt5lc7od7.webp" alt="Gallery"></div><div class="swiper-slide"><img src="https://flymannathalie.com/cdn/shop/files/cover_cfd75681-0340-45c5-a607-312bda5929c0.jpg?v=1743226064&width=600" alt="Gallery"></div><div class="swiper-slide"><img src="https://flymannathalie.com/cdn/shop/files/NTBM3540-12.jpg?v=1744526065&width=500" alt="Gallery"></div><div class="swiper-slide"><img src="https://flymannathalie.com/cdn/shop/files/ash.jpg?v=1744526065&width=500" alt="Gallery"></div><div class="swiper-slide"><img src="https://flymannathalie.com/cdn/shop/files/blush_032b9431-a1da-4516-b593-d40f3edc8d98.jpg?v=1744526065&width=500" alt="Gallery"></div><div class="swiper-slide"><img src="https://flymannathalie.com/cdn/shop/files/ivory.jpg?v=1744526065&width=500" alt="Gallery"></div>
             </div>
-            <div class="hidden md:flex space-x-8">
-                <a href="#features" class="text-deepblue hover:text-coral font-medium transition">Fitur</a>
-                <a href="#gallery" class="text-deepblue hover:text-coral font-medium transition">Galeri</a>
-                <a href="#testimonials" class="text-deepblue hover:text-coral font-medium transition">Testimoni</a>
-                <a href="#order" class="text-deepblue hover:text-coral font-medium transition">Pesan Sekarang</a>
-            </div>
-            <button class="md:hidden text-deepblue">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-                </svg>
-            </button>
+            <div class="swiper-pagination"></div>
         </div>
-    </nav>
 
-    <!-- Hero Section -->
-    <section class="relative h-screen flex items-center justify-center overflow-hidden">
-        <div class="absolute inset-0">
-            <img src="https://flymannathalie.com/cdn/shop/files/cover_cfd75681-0340-45c5-a607-312bda5929c0.jpg?v=1743226064&width=800" alt="Nathalie Ice Silk Maternity Bra" class="w-full h-full object-cover">
-            <div class="absolute inset-0 hero-gradient"></div>
-        </div>
-        <div class="relative z-10 container mx-auto px-4 text-center text-white">
-            <h1 class="font-heading text-4xl md:text-6xl lg:text-7xl font-bold mb-4 scroll-fade">Nathalie Ice Silk Maternity Bra</h1>
-            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto scroll-fade">Kenakan kenyamanan sepanjang hari dengan teknologi Ice Silk yang memberikan sensasi dingin dan nyaman untuk ibu menyusui.</p>
-            <div class="scroll-fade">
-                <div class="inline-flex items-center bg-white bg-opacity-20 rounded-full px-6 py-2 mb-6">
-                    <span class="text-lg font-medium">Harga Spesial:</span>
-                    <span class="text-2xl font-bold ml-2">Rp 188.000</span>
-                    <span class="price-tag text-lg ml-2 text-gray-300">Rp 225.000</span>
-                </div>
+        
+        <!-- Flash Sale Bar -->
+        <div class="flash-sale">
+            <div class="fs-left">
+                <span class="fs-title">FLASH SALE</span>
+                <span style="font-size:0.75rem; opacity:0.9;">Stok Terbatas!</span>
             </div>
-            <a href="#order" class="scroll-fade inline-block bg-coral hover:bg-opacity-90 text-white font-bold py-4 px-8 rounded-full text-lg transition transform hover:scale-105 shadow-lg">Pesan Sekarang</a>
+            <div class="fs-timer">
+                <span> FLASH SALE BERAKHIR</span>
+                <span class="fs-box" id="fs-h">00</span> :
+                <span class="fs-box" id="fs-m">00</span> :
+                <span class="fs-box" id="fs-s">00</span>
+            </div>
+        </div>
+        
+
+        <!-- Info -->
+        <div class="p-info">
+            <div class="p-price">
+                <span id="displayPrice">Rp 188.000</span>
+                <span class="old">Rp 225.000</span>
+            </div>
+            <h1 class="p-name">Nathalie Ice Silk Maternity Bra</h1>
             
-            <div class="mt-12 flex justify-center space-x-8 scroll-fade">
-                <div class="flex items-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                    </svg>
-                    <span>Garansi 30 Hari</span>
+            <!-- Custom Shopee Stats -->
+            <div class="p-stats-row">
+                <div class="stat-item">
+                    <i class="fas fa-star" style="color:var(--star-yellow)"></i> 5.0
                 </div>
-                <div class="flex items-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                    </svg>
-                    <span>Gratis Ongkir</span>
+                <div class="stat-item">
+                    <span style="color:#222; font-weight:500;">2.8RB</span> Penilaian
                 </div>
-                <div class="flex items-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                    </svg>
-                    <span>Asli 100%</span>
+                <div class="stat-item">
+                     <span style="color:#222; font-weight:500;">6.6RB+</span> Terjual
                 </div>
             </div>
         </div>
-    </section>
 
-    <!-- Product Features -->
-    <section id="features" class="py-16 md:py-24 bg-white">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-16">
-                <h2 class="font-heading text-3xl md:text-4xl font-bold text-deepblue mb-4">Keunggulan Nathalie Ice Silk Maternity Bra</h2>
-                <p class="text-lg text-gray-600 max-w-3xl mx-auto">Didesain khusus untuk memberikan kenyamanan maksimal bagi ibu menyusui dengan teknologi canggih.</p>
-            </div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="feature-card bg-foamwhite p-8 rounded-xl transition duration-300">
-                    <div class="w-16 h-16 bg-deepblue bg-opacity-10 rounded-full flex items-center justify-center mb-6">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-deepblue" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
-                        </svg>
-                    </div>
-                    <h3 class="font-title text-xl font-semibold mb-3">Ice Silk Technology</h3>
-                    <p class="text-gray-600">Menjaga kulit tetap kering dan nyaman dengan sensasi dingin sepanjang hari, mencegah iritasi dan kepanasan.</p>
+        <!-- Variants (Horizontal Scroll) -->
+        
+        <div class="variant-section">
+            <span class="section-label">Pilihan: <span id="var-label" style="font-weight:400; color:var(--primary); margin-left:5px;">-</span></span>
+            <div class="v-grid">
+                
+                <div class="v-card active " 
+                    onclick="changeVariant(this, 'https://down-id.img.susercontent.com/file/id-11134207-7ra0j-mbvreqt5qyhgfc@resize_w450_nl.webp', '', 'Ivory ')">
+                    <img src="https://down-id.img.susercontent.com/file/id-11134207-7ra0j-mbvreqt5qyhgfc@resize_w450_nl.webp"> 
+                    <span>Ivory </span>
                 </div>
                 
-                <div class="feature-card bg-foamwhite p-8 rounded-xl transition duration-300">
-                    <div class="w-16 h-16 bg-deepblue bg-opacity-10 rounded-full flex items-center justify-center mb-6">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-deepblue" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
-                        </svg>
-                    </div>
-                    <h3 class="font-title text-xl font-semibold mb-3">Travel Friendly</h3>
-                    <p class="text-gray-600">Desain compact yang mudah dibawa traveling, praktis untuk ibu aktif yang sering bepergian.</p>
+                <div class="v-card  " 
+                    onclick="changeVariant(this, 'https://down-id.img.susercontent.com/file/id-11134207-7ra0r-mbvreqt5sd1w0b@resize_w450_nl.webp', '', 'Blush ')">
+                    <img src="https://down-id.img.susercontent.com/file/id-11134207-7ra0r-mbvreqt5sd1w0b@resize_w450_nl.webp"> 
+                    <span>Blush </span>
                 </div>
                 
-                <div class="feature-card bg-foamwhite p-8 rounded-xl transition duration-300">
-                    <div class="w-16 h-16 bg-deepblue bg-opacity-10 rounded-full flex items-center justify-center mb-6">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-deepblue" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
-                        </svg>
-                    </div>
-                    <h3 class="font-title text-xl font-semibold mb-3">Nursing Clip</h3>
-                    <p class="text-gray-600">Dilengkapi dengan klip menyusui yang praktis dan cepat, memudahkan proses menyusui kapan saja.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Video Demo -->
-    <section class="py-16 bg-foamwhite">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-12">
-                <h2 class="font-heading text-3xl md:text-4xl font-bold text-deepblue mb-4">Lihat Produk Kami dalam Aksi</h2>
-                <p class="text-lg text-gray-600 max-w-3xl mx-auto">Tonton video demo untuk melihat fitur dan kualitas Nathalie Ice Silk Maternity Bra</p>
-            </div>
-            
-            <div class="max-w-4xl mx-auto rounded-xl overflow-hidden shadow-xl">
-                <div class="video-container">
-                    <iframe src="https://flymannathalie.com/cdn/shop/videos/c/vp/295778d2660c47f9a3bd40a9944c8123/295778d2660c47f9a3bd40a9944c8123.HD-720p-3.0Mbps-45865310.mp4?v=0" frameborder="0" allowfullscreen></iframe>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Product Gallery -->
-    <section id="gallery" class="py-16 bg-white">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-12">
-                <h2 class="font-heading text-3xl md:text-4xl font-bold text-deepblue mb-4">Galeri Produk</h2>
-                <p class="text-lg text-gray-600 max-w-3xl mx-auto">Lihat detail dan kualitas Nathalie Ice Silk Maternity Bra dari berbagai angle</p>
-            </div>
-            
-            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-                <div class="gallery-image rounded-lg overflow-hidden shadow-md" onclick="openLightbox('https://flymannathalie.com/cdn/shop/files/NTBM3540-12.jpg?v=1744526065&width=800')">
-                    <img src="https://flymannathalie.com/cdn/shop/files/NTBM3540-12.jpg?v=1744526065&width=800" alt="Nathalie Bra Angle 1" class="w-full h-full object-cover">
-                </div>
-                <div class="gallery-image rounded-lg overflow-hidden shadow-md" onclick="openLightbox('https://flymannathalie.com/cdn/shop/files/RevisiMeasurementBra-35.jpg?v=1744526065&width=800')">
-                    <img src="https://flymannathalie.com/cdn/shop/files/RevisiMeasurementBra-35.jpg?v=1744526065&width=800" alt="Nathalie Bra Angle 2" class="w-full h-full object-cover">
-                </div>
-                <div class="gallery-image rounded-lg overflow-hidden shadow-md" onclick="openLightbox('https://flymannathalie.com/cdn/shop/files/NTBM3540-11.jpg?v=1744526065&width=800')">
-                    <img src="https://flymannathalie.com/cdn/shop/files/NTBM3540-11.jpg?v=1744526065&width=800" alt="Nathalie Bra Angle 3" class="w-full h-full object-cover">
-                </div>
-                <div class="gallery-image rounded-lg overflow-hidden shadow-md" onclick="openLightbox('https://flymannathalie.com/cdn/shop/files/NTBM3540-09.jpg?v=1744526065&width=800')">
-                    <img src="https://flymannathalie.com/cdn/shop/files/NTBM3540-09.jpg?v=1744526065&width=800" alt="Nathalie Bra Angle 4" class="w-full h-full object-cover">
-                </div>
-                <div class="gallery-image rounded-lg overflow-hidden shadow-md" onclick="openLightbox('https://flymannathalie.com/cdn/shop/files/NTBM3540-08.jpg?v=1744526065&width=800')">
-                    <img src="https://flymannathalie.com/cdn/shop/files/NTBM3540-08.jpg?v=1744526065&width=800" alt="Nathalie Bra Angle 5" class="w-full h-full object-cover">
-                </div>
-                <div class="gallery-image rounded-lg overflow-hidden shadow-md" onclick="openLightbox('https://flymannathalie.com/cdn/shop/files/NTBM3540-07.jpg?v=1744526065&width=800')">
-                    <img src="https://flymannathalie.com/cdn/shop/files/NTBM3540-07.jpg?v=1744526065&width=800" alt="Nathalie Bra Angle 6" class="w-full h-full object-cover">
-                </div>
-                <div class="gallery-image rounded-lg overflow-hidden shadow-md" onclick="openLightbox('https://flymannathalie.com/cdn/shop/files/MIN.jpg?v=1744526065&width=800')">
-                    <img src="https://flymannathalie.com/cdn/shop/files/MIN.jpg?v=1744526065&width=800" alt="Nathalie Bra Angle 7" class="w-full h-full object-cover">
-                </div>
-                <div class="gallery-image rounded-lg overflow-hidden shadow-md" onclick="openLightbox('https://flymannathalie.com/cdn/shop/files/NTBM3540-06.jpg?v=1744526065&width=800')">
-                    <img src="https://flymannathalie.com/cdn/shop/files/NTBM3540-06.jpg?v=1744526065&width=800" alt="Nathalie Bra Angle 8" class="w-full h-full object-cover">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials -->
-    <section id="testimonials" class="py-16 bg-foamwhite">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-12">
-                <h2 class="font-heading text-3xl md:text-4xl font-bold text-deepblue mb-4">Apa Kata Mereka?</h2>
-                <p class="text-lg text-gray-600 max-w-3xl mx-auto">Testimoni jujur dari pelanggan yang sudah menggunakan Nathalie Ice Silk Maternity Bra</p>
-            </div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <!-- Testimonial 1 -->
-                <div class="testimonial-card bg-white p-6 rounded-xl shadow-md">
-                    <div class="flex items-center mb-4">
-                        <img src="https://i.pinimg.com/736x/df/d2/e8/dfd2e8a21cf63c0e143dfcf204ae39e7.jpg" alt="Rini S." class="w-12 h-12 rounded-full object-cover mr-4">
-                        <div>
-                            <h4 class="font-medium">R*** S.</h4>
-                            <div class="star-rating">
-                                ★★★★☆
-                            </div>
-                        </div>
-                    </div>
-                    <p class="text-gray-600 mb-4">"Hanya untuk yg model ini, lebih cocok di pakai di rumah saja, karna kurang bisa menyangga payudara. Tp overall bahannya nyaman sekali."</p>
-                    <div class="cursor-pointer h-48 overflow-hidden rounded-lg bg-gray-100 flex items-center justify-center" onclick="openLightbox('https://down-tx-sg.vod.susercontent.com/api/v4/11110103/mms/id-11110103-6kmio-m8rqyk5bfn6lc3.default.mp4', 'video')">
-                        <video class="w-full h-full object-cover">
-                            <source src="https://down-tx-sg.vod.susercontent.com/api/v4/11110103/mms/id-11110103-6kmio-m8rqyk5bfn6lc3.default.mp4" type="video/mp4">
-                        </video>
-                        <div class="absolute bg-black bg-opacity-40 rounded-full p-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
-                            </svg>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Testimonial 2 -->
-                <div class="testimonial-card bg-white p-6 rounded-xl shadow-md">
-                    <div class="flex items-center mb-4">
-                        <img src="https://i.pinimg.com/736x/5f/a5/1d/5fa51dba188a2bd68bcc39d74c01b9df.jpg" alt="Meisya" class="w-12 h-12 rounded-full object-cover mr-4">
-                        <div>
-                            <h4 class="font-medium">M*****a</h4>
-                            <div class="star-rating">
-                                ★★★★★
-                            </div>
-                        </div>
-                    </div>
-                    <p class="text-gray-600 mb-4">"Bahannya enak banget, lembut dan lentur. Agak nyesel cuma beli 1."</p>
-                    <div class="mt-4">
-                        <img src="https://down-id.img.susercontent.com/file/id-11134103-7rbka-m9gu9hw2dy8ic0.webp" 
-                             alt="Testimoni Meisya" 
-                             class="testimonial-image"
-                             onclick="openLightbox('https://down-id.img.susercontent.com/file/id-11134103-7rbka-m9gu9hw2dy8ic0.webp', 'image')">
-                    </div>
-                </div>
-                
-                <!-- Testimonial 3 -->
-                <div class="testimonial-card bg-white p-6 rounded-xl shadow-md">
-                    <div class="flex items-center mb-4">
-                        <img src="https://i.pinimg.com/736x/b8/93/48/b89348a77b8db98352db056d55b46f97.jpg" alt="Citra" class="w-12 h-12 rounded-full object-cover mr-4">
-                        <div>
-                            <h4 class="font-medium">C****a</h4>
-                            <div class="star-rating">
-                                ★★★★★
-                            </div>
-                        </div>
-                    </div>
-                    <p class="text-gray-600 mb-4">"Bahan halus lembut, ada design sirkulasi udara buat bumil biar ga cepet gerah."</p>
-                    <div class="cursor-pointer h-48 overflow-hidden rounded-lg bg-gray-100 flex items-center justify-center" onclick="openLightbox('https://down-zl-sg.vod.susercontent.com/api/v4/11110103/mms/id-11110103-6kmj0-m8btvjjz5gl4b9.16000051744108321.mp4', 'video')">
-                        <video class="w-full h-full object-cover">
-                            <source src="https://down-zl-sg.vod.susercontent.com/api/v4/11110103/mms/id-11110103-6kmj0-m8btvjjz5gl4b9.16000051744108321.mp4" type="video/mp4">
-                        </video>
-                        <div class="absolute bg-black bg-opacity-40 rounded-full p-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
-                            </svg>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Testimonial 4 -->
-                <div class="testimonial-card bg-white p-6 rounded-xl shadow-md">
-                    <div class="flex items-center mb-4">
-                        <img src="https://i.pinimg.com/736x/68/44/0e/68440e2be516506d3091f29e4dd5a731.jpg" alt="Lestari F" class="w-12 h-12 rounded-full object-cover mr-4">
-                        <div>
-                            <h4 class="font-medium">L***** F</h4>
-                            <div class="star-rating">
-                                ★★★★★
-                            </div>
-                        </div>
-                    </div>
-                    <p class="text-gray-600 mb-4">"Sdh 2x beli disini dan sgt cocok utk bra-nya. Sangat mendukung breast feeding era. Bahan bagus dan adem."</p>
-                    <div class="mt-4">
-                        <img src="https://down-id.img.susercontent.com/file/id-11134103-7rbk9-mamqqn7c49f8ac.webp" 
-                             alt="Testimoni Lestari" 
-                             class="testimonial-image"
-                             onclick="openLightbox('https://down-id.img.susercontent.com/file/id-11134103-7rbk9-mamqqn7c49f8ac.webp', 'image')">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Pricing & Promo -->
-    <section class="py-16 bg-white">
-        <div class="container mx-auto px-4">
-            <div class="max-w-4xl mx-auto bg-gradient-to-r from-deepblue to-oceanblue rounded-2xl p-8 text-white">
-                <div class="flex flex-col md:flex-row items-center justify-between">
-                    <div class="mb-6 md:mb-0">
-                        <h3 class="font-heading text-2xl md:text-3xl font-bold mb-2">Promo Spesial Hari Ini!</h3>
-                        <p class="text-skyblue">Hemat Rp 37.000 dari harga normal</p>
-                        
-                        <div class="mt-6 flex items-center">
-                            <span class="text-4xl font-bold">Rp 188.000</span>
-                            <span class="ml-4 text-xl line-through opacity-70">Rp 225.000</span>
-                        </div>
-                    </div>
-                    
-                    <div class="text-center">
-                        <p class="mb-2">Promo berakhir dalam:</p>
-                        <div class="flex justify-center space-x-2">
-                            <div class="countdown-item bg-white bg-opacity-20 rounded-lg p-2">
-                                <div class="text-2xl font-bold" id="countdown-hours">12</div>
-                                <div class="text-xs">Jam</div>
-                            </div>
-                            <div class="countdown-item bg-white bg-opacity-20 rounded-lg p-2">
-                                <div class="text-2xl font-bold" id="countdown-minutes">45</div>
-                                <div class="text-xs">Menit</div>
-                            </div>
-                            <div class="countdown-item bg-white bg-opacity-20 rounded-lg p-2">
-                                <div class="text-2xl font-bold" id="countdown-seconds">30</div>
-                                <div class="text-xs">Detik</div>
-                            </div>
-                        </div>
-                        <a href="#order" class="mt-4 inline-block bg-coral hover:bg-opacity-90 text-white font-bold py-3 px-6 rounded-full transition transform hover:scale-105">Pesan Sekarang</a>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-foamwhite p-8 rounded-xl border border-gray-200">
-                    <h3 class="font-title text-xl font-semibold mb-4">Garansi Kepuasan</h3>
-                    <ul class="space-y-3">
-                        <li class="flex items-start">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-500 mr-2 mt-1" viewBox="0 0 20 20" fill="currentColor">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
-                            </svg>
-                            <span>Garansi 30 hari uang kembali</span>
-                        </li>
-                        <li class="flex items-start">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-500 mr-2 mt-1" viewBox="0 0 20 20" fill="currentColor">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
-                            </svg>
-                            <span>Produk 100% asli Nathalie</span>
-                        </li>
-                    </ul>
-                </div>
-                
-                <div class="bg-foamwhite p-8 rounded-xl border border-gray-200">
-                    <h3 class="font-title text-xl font-semibold mb-4">Pengiriman Cepat</h3>
-                    <ul class="space-y-3">
-                        <li class="flex items-start">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-500 mr-2 mt-1" viewBox="0 0 20 20" fill="currentColor">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
-                            </svg>
-                            <span>Gratis ongkir seluruh Indonesia</span>
-                        </li>
-                        <li class="flex items-start">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-500 mr-2 mt-1" viewBox="0 0 20 20" fill="currentColor">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
-                            </svg>
-                            <span>Pengiriman 1-3 hari kerja</span>
-                        </li>
-                    </ul>
+                <div class="v-card  " 
+                    onclick="changeVariant(this, 'https://down-id.img.susercontent.com/file/id-11134207-7ra0p-mbvreqt5trmc02@resize_w450_nl.webp', '', 'Ash ')">
+                    <img src="https://down-id.img.susercontent.com/file/id-11134207-7ra0p-mbvreqt5trmc02@resize_w450_nl.webp"> 
+                    <span>Ash </span>
                 </div>
                 
             </div>
         </div>
-    </section>
+        
 
-    <!-- Order Form -->
-    <section id="order" class="py-16 bg-foamwhite">
-        <div class="container mx-auto px-4">
-            <div class="max-w-4xl mx-auto">
-                <div class="text-center mb-12">
-                    <h2 class="font-heading text-3xl md:text-4xl font-bold text-deepblue mb-4">Pesan Sekarang</h2>
-                    <p class="text-lg text-gray-600">Isi formulir pemesanan di bawah ini untuk mendapatkan Nathalie Ice Silk Maternity Bra dengan harga spesial</p>
-                </div>
-                
-                <!-- OrderOnline Embed Code -->
-                <div class="ooef bg-white rounded-xl shadow-xl overflow-hidden">
-                    <form class="orderonline-embed-form" data-username="mila" data-product-slug="maternity-bra" data-product-id="6868caca95676942920ffc31" id="oo-embed-form-maternity-bra-1426" data-origin="orderonline">
-                        <div class="ooef-loader"><style>.ooef-loader{visibility: hidden;opacity: 0;position: absolute;left: 0;right: 0;top: 0;bottom: 0;display: flex;justify-content: center;align-items: center;flex-direction: column;animation: ooLoadingIn 10s ease;-webkit-animation: ooLoadingIn 10s ease;animation-fill-mode: forwards;overflow: hidden}@keyframes ooLoadingIn{0%{visibility: hidden;opacity: 0}20%{visibility: visible;opacity: 0}100%{visibility: visible;opacity: 1}}@-webkit-keyframes ooLoadingIn{0%{visibility: hidden;opacity: 0}20%{visibility: visible;opacity: 0}100%{visibility: visible;opacity: 1}}.ooef-loader>div,.ooef-loader>div:after{border-radius: 50%;width: 2.5rem;height: 2.5rem}.ooef-loader>div{font-size: 10px;position: relative;text-indent: -9999em;border: .25rem solid #f5f5f5;border-left: .25rem solid #55c4cf;-webkit-transform: translateZ(0);-ms-transform: translateZ(0);transform: translateZ(0);-webkit-animation: ooLoading 1.1s infinite linear;animation: ooLoading 1.1s infinite linear}.ooef-loader.error>div{border-left: .25rem solid #ff4500;animation-duration: 5s}@-webkit-keyframes ooLoading{0%{-webkit-transform: rotate(0);transform: rotate(0)}100%{-webkit-transform: rotate(360deg);transform: rotate(360deg)}}@keyframes ooLoading{0%{-webkit-transform: rotate(0);transform: rotate(0)}100%{-webkit-transform: rotate(360deg);transform: rotate(360deg)}}</style><div aria-live="polite" role="status"><div>Loading...</div></div></div>
-                    </form>
-                </div>
-            </div>
+        <!-- Shop Info (Placed Below Variants) -->
+        <div class="shop-info">
+             <img src="https://flymannathalie.com/cdn/shop/files/logo_new.png?v=1724814606&width=270" class="shop-avatar">
+             <div class="shop-details">
+                 <div class="shop-name">Flyman </div>
+                 <div class="shop-active">Aktif 5 menit lalu</div>
+             </div>
         </div>
-    </section>
 
-    <!-- Footer -->
-    <footer class="bg-deepblue text-white py-12">
-        <div class="container mx-auto px-4">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-                <div>
-                    <img src="https://flymannathalie.com/cdn/shop/files/logo_new.png?v=1724814606&width=270" alt="Nathalie Logo" class="h-10 mb-4">
-                    <p class="text-skyblue">Bra menyusui premium dengan teknologi canggih untuk kenyamanan maksimal ibu menyusui.</p>
-                </div>
-                
-                
-                <div>
-                    <h4 class="font-title text-lg font-semibold mb-4">Kontak</h4>
-                    <ul class="space-y-2">
-                    </ul>
-                    
-                    <div class="mt-4 flex space-x-4">
-                        <a href="#" class="text-skyblue hover:text-white transition">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"/>
-                            </svg>
-                        </a>
-                        <a href="#" class="text-skyblue hover:text-white transition">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.072-1.689.072-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-                            </svg>
-                        </a>
-                        <a href="#" class="text-skyblue hover:text-white transition">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="border-t border-skyblue border-opacity-20 mt-8 pt-8 text-center text-skyblue">
-                <p>&copy; 2023 Nathalie. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Sticky CTA -->
-    <div class="sticky-cta bg-white shadow-lg py-3 px-4">
-        <div class="container mx-auto flex items-center justify-between">
+        <!-- Delivery Guarantee (Dynamic Date - Clean Version) -->
+        <div class="delivery-bar">
+            <i class="fas fa-truck-fast delivery-icon"></i>
             <div>
-                <p class="font-medium text-gray-600">Nathalie Ice Silk Maternity Bra</p>
-                <div class="flex items-center">
-                    <span class="text-lg font-bold text-deepblue">Rp 188.000</span>
-                    <span class="price-tag text-sm ml-2 text-gray-500">Rp 225.000</span>
+                <span style="display:block; font-weight:600; font-size:0.8rem; color:#00bfa5;">Garansi Tiba: <span id="deliveryDate">Memuat...</span></span>
+            </div>
+        </div>
+
+        <!-- Featured Gallery (Lifestyle - Grid 2 Column) -->
+        
+        <div class="featured-gallery">
+            <span class="section-label" style="margin-bottom:10px; display:block;">Galeri Lifestyle</span>
+            <div class="fg-grid">
+                
+                <div class="fg-item"><img src="https://flymannathalie.com/cdn/shop/files/NTBM3540-11.jpg?v=1744526065&width=500"></div>
+                
+                <div class="fg-item"><img src="https://flymannathalie.com/cdn/shop/files/NTBM3540-12.jpg?v=1744526065&width=500"></div>
+                
+            </div>
+        </div>
+        
+
+        <!-- ACCORDIONS (Dropdowns) -->
+        <div class="accordion">
+            <!-- 1. Panduan Ukuran (Toggleable) -->
+            
+            <div class="acc-item">
+                <div class="acc-header" onclick="toggleAcc(this)">
+                    <span>Panduan Ukuran</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="acc-content">
+                    <img src="https://down-id.img.susercontent.com/file/id-11134207-7rbke-m7umpho3ybaa49.webp" style="width:100%; border-radius:4px; margin-top:10px;">
+                    
+                    
                 </div>
             </div>
-            <a href="#order" class="bg-coral hover:bg-opacity-90 text-white font-bold py-2 px-6 rounded-full transition">Pesan Sekarang</a>
+            
+
+            <!-- 2. Spesifikasi & Deskripsi -->
+            <div class="acc-item">
+                <div class="acc-header" onclick="toggleAcc(this)">
+                    <span>Spesifikasi & Deskripsi</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="acc-content">
+                    <div style="margin-bottom:15px; margin-top:10px;">
+                        <div class="spec-row" style="display:block; margin-bottom:2px;"><span class="spec-val" style="color:#333;">Nathalie Ice Silk Maternity Bra </span></div><div class="spec-row" style="display:block; margin-bottom:2px;"><span class="spec-val" style="color:#333;"></span></div><div class="spec-row"><span class="spec-label">- Ice Silk Technology</span><span class="spec-val">Menjaga kulit tetap kering dan nyaman dengan sensasi dingin sepanjang hari.</span></div><div class="spec-row" style="display:block; margin-bottom:2px;"><span class="spec-val" style="color:#333;"></span></div><div class="spec-row" style="display:block; margin-bottom:2px;"><span class="spec-val" style="color:#333;">- Travel Friendly, Desain compact sehingga mudah dibawa pergi traveling.</span></div><div class="spec-row" style="display:block; margin-bottom:2px;"><span class="spec-val" style="color:#333;"></span></div><div class="spec-row"><span class="spec-label">- Nursing Clip</span><span class="spec-val">Dilengkapi dengan klip menyusui yang praktis dan cepat mudah saat menyusui.</span></div><div class="spec-row" style="display:block; margin-bottom:2px;"><span class="spec-val" style="color:#333;"></span></div>
+                    </div>
+                    <hr style="border:0; border-top:1px dashed #eee; margin:15px 0;">
+                    <div style="white-space:pre-line;">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- RICH FEATURES (New Section) -->
+        
+        <div class="p-info" style="border-bottom:10px solid #f5f5f5;">
+            <span class="section-label" style="margin-bottom:20px; display:block;">Fitur Unggulan</span>
+            
+            <div style="margin-bottom:25px;">
+                <img src="https://flymannathalie.com/cdn/shop/files/NTBM3540-09.jpg?v=1744526065&width=500" style="width:100%; border-radius:8px; margin-bottom:10px;">
+                <div style="font-weight:700; font-size:0.95rem; margin-bottom:5px;">Sensasi Dingin Ice Silk</div>
+                <div style="font-size:0.9rem; color:#555; line-height:1.5; white-space:pre-line;">Rasakan kelembutan dan sensasi sejuk dari bahan ice silk yang menenangkan kulit sensitif ibu hamil.</div>
+            </div>
+            
+            <div style="margin-bottom:25px;">
+                <img src="https://flymannathalie.com/cdn/shop/files/NTBM3540-08.jpg?v=1744526065&width=500" style="width:100%; border-radius:8px; margin-bottom:10px;">
+                <div style="font-weight:700; font-size:0.95rem; margin-bottom:5px;">Desain Ergonomis Maternity</div>
+                <div style="font-size:0.9rem; color:#555; line-height:1.5; white-space:pre-line;">Diciptakan khusus untuk memberikan dukungan optimal dan akses menyusui yang mudah dengan klip praktis.</div>
+            </div>
+            
+            <div style="margin-bottom:25px;">
+                <img src="https://flymannathalie.com/cdn/shop/files/NTBM3540-07.jpg?v=1744526065&width=500" style="width:100%; border-radius:8px; margin-bottom:10px;">
+                <div style="font-weight:700; font-size:0.95rem; margin-bottom:5px;">Dukungan Fleksibel</div>
+                <div style="font-size:0.9rem; color:#555; line-height:1.5; white-space:pre-line;">Menyesuaikan diri dengan perubahan ukuran payudara Anda, memberikan kenyamanan tanpa kompromi selama kehamilan dan menyusui.</div>
+            </div>
+            
+            <div style="margin-bottom:25px;">
+                <img src="https://flymannathalie.com/cdn/shop/files/MIN.jpg?v=1744526065&width=500" style="width:100%; border-radius:8px; margin-bottom:10px;">
+                <div style="font-weight:700; font-size:0.95rem; margin-bottom:5px;">Kenyamanan Dingin Ice Silk</div>
+                <div style="font-size:0.9rem; color:#555; line-height:1.5; white-space:pre-line;">Rasakan sensasi sejuk dan halus di kulit berkat bahan Ice Silk yang superior, ideal untuk kenyamanan ibu hamil sepanjang hari.</div>
+            </div>
+            
+            <div style="margin-bottom:25px;">
+                <img src="https://flymannathalie.com/cdn/shop/files/NTBM3540-06.jpg?v=1744526065&width=500" style="width:100%; border-radius:8px; margin-bottom:10px;">
+                <div style="font-weight:700; font-size:0.95rem; margin-bottom:5px;">Dukungan Khusus Ibu Hamil</div>
+                <div style="font-size:0.9rem; color:#555; line-height:1.5; white-space:pre-line;">Dirancang khusus untuk memberikan topangan maksimal bagi payudara yang berubah selama kehamilan dan menyusui.</div>
+            </div>
+            
+            <div style="margin-bottom:25px;">
+                <img src="https://flymannathalie.com/cdn/shop/files/NTBM3540-05.jpg?v=1744526065&width=500" style="width:100%; border-radius:8px; margin-bottom:10px;">
+                <div style="font-weight:700; font-size:0.95rem; margin-bottom:5px;">Akses Menyusui Satu Tangan</div>
+                <div style="font-size:0.9rem; color:#555; line-height:1.5; white-space:pre-line;">Klip menyusui yang mudah diakses dengan satu tangan menjadikan momen menyusui lebih praktis dan tanpa repot.</div>
+            </div>
+            
+        </div>
+        
+
+        <!-- Reviews (Shopee Style) -->
+        <div class="review-section">
+            <div class="review-header">
+                <span class="section-label">Penilaian Produk</span>
+                <span style="color:var(--primary); font-size:0.9rem;">Lihat Semua ></span>
+            </div>
+            
+            
+            <div class="r-item">
+                <div class="r-user">
+                    <img src="https://i.pinimg.com/736x/df/d2/e8/dfd2e8a21cf63c0e143dfcf204ae39e7.jpg" class="r-avatar">
+                    <div class="r-meta">
+                        <div>Siti Aisyah</div>
+                        <div class="r-rating">
+                            <i class="fas fa-star" style="color:var(--star-yellow)"></i><i class="fas fa-star" style="color:var(--star-yellow)"></i><i class="fas fa-star" style="color:var(--star-yellow)"></i><i class="fas fa-star" style="color:var(--star-yellow)"></i><i class="fas fa-star" style="color:var(--star-yellow)"></i>
+                        </div>
+                        <!-- Dynamic Date Placeholder -->
+                        <div style="margin-top:2px;" class="r-date-placeholder" data-idx="0">Memuat tanggal... | Variasi: All</div>
+                    </div>
+                </div>
+                <div class="r-text">Bra ini nyaman banget buat busui, bahannya adem dan nggak bikin gerah. Desainnya juga pas buat berhijab, nggak nyeplak dan support-nya oke.</div>
+                
+                <div class="r-media-grid">
+                    
+                        <div class="r-media-item" onclick="openLightbox('https://down-tx-sg.vod.susercontent.com/api/v4/11110103/mms/id-11110103-6kmio-m8rqyk5bfn6lc3.default.mp4')">
+                           <video src="https://down-tx-sg.vod.susercontent.com/api/v4/11110103/mms/id-11110103-6kmio-m8rqyk5bfn6lc3.default.mp4" muted></video><i class="fas fa-play" style="position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); color:#fff; font-size:0.8rem; text-shadow:0 0 2px #000;"></i>
+                        </div>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="r-item">
+                <div class="r-user">
+                    <img src="https://i.pinimg.com/736x/5f/a5/1d/5fa51dba188a2bd68bcc39d74c01b9df.jpg" class="r-avatar">
+                    <div class="r-meta">
+                        <div>Fatimah Zahra</div>
+                        <div class="r-rating">
+                            <i class="fas fa-star" style="color:var(--star-yellow)"></i><i class="fas fa-star" style="color:var(--star-yellow)"></i><i class="fas fa-star" style="color:var(--star-yellow)"></i><i class="fas fa-star" style="color:var(--star-yellow)"></i><i class="fas fa-star" style="color:var(--star-yellow)"></i>
+                        </div>
+                        <!-- Dynamic Date Placeholder -->
+                        <div style="margin-top:2px;" class="r-date-placeholder" data-idx="1">Memuat tanggal... | Variasi: All</div>
+                    </div>
+                </div>
+                <div class="r-text">Nathalie Ice Silk Maternity Bra ini pilihan terbaik! Adem, lembut, dan support-nya mantap. Sangat recommended untuk ibu menyusui.</div>
+                
+                <div class="r-media-grid">
+                    
+                        <div class="r-media-item" onclick="openLightbox('https://down-id.img.susercontent.com/file/id-11134103-7rbka-m9gu9hw2dy8ic0.webp')">
+                           <img src="https://down-id.img.susercontent.com/file/id-11134103-7rbka-m9gu9hw2dy8ic0.webp">
+                        </div>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="r-item">
+                <div class="r-user">
+                    <img src="https://i.pinimg.com/736x/68/44/0e/68440e2be516506d3091f29e4dd5a731.jpg" class="r-avatar">
+                    <div class="r-meta">
+                        <div>Nurul Huda</div>
+                        <div class="r-rating">
+                            <i class="fas fa-star" style="color:var(--star-yellow)"></i><i class="fas fa-star" style="color:var(--star-yellow)"></i><i class="fas fa-star" style="color:var(--star-yellow)"></i><i class="fas fa-star" style="color:var(--star-yellow)"></i>
+                        </div>
+                        <!-- Dynamic Date Placeholder -->
+                        <div style="margin-top:2px;" class="r-date-placeholder" data-idx="2">Memuat tanggal... | Variasi: All</div>
+                    </div>
+                </div>
+                <div class="r-text">Awalnya ragu, tapi ternyata bra ini super nyaman dipakai seharian. Bahannya dingin dan pas banget untuk yang berhijab. Pasti beli lagi!</div>
+                
+                <div class="r-media-grid">
+                    
+                        <div class="r-media-item" onclick="openLightbox('https://down-zl-sg.vod.susercontent.com/api/v4/11110103/mms/id-11110103-6kmj0-m8btvjjz5gl4b9.16000051744108321.mp4')">
+                           <video src="https://down-zl-sg.vod.susercontent.com/api/v4/11110103/mms/id-11110103-6kmj0-m8btvjjz5gl4b9.16000051744108321.mp4" muted></video><i class="fas fa-play" style="position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); color:#fff; font-size:0.8rem; text-shadow:0 0 2px #000;"></i>
+                        </div>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="r-item">
+                <div class="r-user">
+                    <img src="https://i.pinimg.com/736x/b8/93/48/b89348a77b8db98352db056d55b46f97.jpg" class="r-avatar">
+                    <div class="r-meta">
+                        <div>Fitriyah</div>
+                        <div class="r-rating">
+                            <i class="fas fa-star" style="color:var(--star-yellow)"></i><i class="fas fa-star" style="color:var(--star-yellow)"></i><i class="fas fa-star" style="color:var(--star-yellow)"></i><i class="fas fa-star" style="color:var(--star-yellow)"></i><i class="fas fa-star" style="color:var(--star-yellow)"></i>
+                        </div>
+                        <!-- Dynamic Date Placeholder -->
+                        <div style="margin-top:2px;" class="r-date-placeholder" data-idx="3">Memuat tanggal... | Variasi: All</div>
+                    </div>
+                </div>
+                <div class="r-text">Bra menyusui ini nyaman banget dan bahannya adem, cocok untuk ibu berhijab seperti saya. Desainnya juga pas, tidak membentuk lekuk tubuh.</div>
+                
+                <div class="r-media-grid">
+                    
+                        <div class="r-media-item" onclick="openLightbox('https://down-id.img.susercontent.com/file/id-11134103-7rbk9-mamqqn7c49f8ac.webp')">
+                           <img src="https://down-id.img.susercontent.com/file/id-11134103-7rbk9-mamqqn7c49f8ac.webp">
+                        </div>
+                    
+                </div>
+                
+            </div>
+            
+        </div>
+        
+        <!-- Order Embed Container -->
+        <div id="orderForm" class="order-section">
+             <!-- Dynamic Variant Confirmation Box -->
+             <div id="variant-confirm" class="order-confirm-box">
+                <img id="vc-img" src="https://flymannathalie.com/cdn/shop/files/cover_cfd75681-0340-45c5-a607-312bda5929c0.jpg?v=1743226064&width=600" class="oc-thumb">
+                <div class="oc-content">
+                   <div class="oc-product-name">Nathalie Ice Silk Maternity Bra</div>
+                   <div class="oc-variant-name" id="vc-name">-</div>
+                </div>
+                <i class="fas fa-check-circle" style="color:#28a745; font-size:1.2rem;"></i>
+             </div>
+
+             <h3 class="section-label" style="text-align:center; margin-bottom:15px;">Formulir Pemesanan</h3>
+             <!-- OrderOnline Embed Code - v8.0.4 --> <div class="ooef"> <form class="orderonline-embed-form" data-username="mila" data-product-slug="maternity-bra" data-product-id="6868caca95676942920ffc31" id="oo-embed-form-maternity-bra-9697" data-origin="orderonline"> <div class="ooef-loader"><style>.ooef-loader{visibility: hidden;opacity: 0;position: absolute;left: 0;right: 0;top: 0;bottom: 0;display: flex;justify-content: center;align-items: center;flex-direction: column;animation: ooLoadingIn 10s ease;-webkit-animation: ooLoadingIn 10s ease;animation-fill-mode: forwards;overflow: hidden}@keyframes ooLoadingIn{0%{visibility: hidden;opacity: 0}20%{visibility: visible;opacity: 0}100%{visibility: visible;opacity: 1}}@-webkit-keyframes ooLoadingIn{0%{visibility: hidden;opacity: 0}20%{visibility: visible;opacity: 0}100%{visibility: visible;opacity: 1}}.ooef-loader>div,.ooef-loader>div:after{border-radius: 50%;width: 2.5rem;height: 2.5rem}.ooef-loader>div{font-size: 10px;position: relative;text-indent: -9999em;border: .25rem solid #f5f5f5;border-left: .25rem solid #55c4cf;-webkit-transform: translateZ(0);-ms-transform: translateZ(0);transform: translateZ(0);-webkit-animation: ooLoading 1.1s infinite linear;animation: ooLoading 1.1s infinite linear}.ooef-loader.error>div{border-left: .25rem solid #ff4500;animation-duration: 5s}@-webkit-keyframes ooLoading{0%{-webkit-transform: rotate(0);transform: rotate(0)}100%{-webkit-transform: rotate(360deg);transform: rotate(360deg)}}@keyframes ooLoading{0%{-webkit-transform: rotate(0);transform: rotate(0)}100%{-webkit-transform: rotate(360deg);transform: rotate(360deg)}}</style><div aria-live="polite" role="status"><div>Loading...</div></div></div> </form> </div> <script> if (typeof xLogError != 'function') { var xLogError = function (error) { var req = new XMLHttpRequest(); var payload = JSON.stringify({ url: document.location.href, line: error.line, stack: error.stack }); var params = 'message=' + encodeURIComponent(error.name) + '&payload=' + encodeURIComponent(payload) + '&type=embed&level=error'; req.open('POST', 'https://api.orderonline.id/log', true); req.setRequestHeader('Content-type', 'application/x-www-form-urlencoded'); req.send(params); }; } try { if (typeof xEmbedScript != 'function') { var xEmbedScript = function () { !function(w, d, e, v, id, t, s) { if (d.getElementById(id)) return; t = d.createElement(e);t.async = !0;t.src = v;t.id = id; s = d.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t, s); }(window, document, 'script', 'https://cdn.orderonline.id/js/embed-v2-slim.min.js?v=8.0.4', 'oo-embed-js'); }; } if (typeof xEmbedInit != 'function') { var xEmbedInit = function (w, n) { if (w.ooe) return; n = w.ooe = function() { n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments) }; if (!w._ooe) w._ooe = n; n.push = n;n.loaded = !0;n.version = '8.0.4';n.queue = []; }; } xEmbedInit(window); ooe('setup', 'redirect', 'https://mila.orderonline.id'); ooe('init', '5f1a7b8fa9bf807da24d83bb', '6868caca95676942920ffc31', '6868caca95676942920ffc32', 'oo-embed-form-maternity-bra-9697', {"mode":"page","action":"Klik untuk pemesanan","title":"Form Pemesanan","triggerPixel":false,"triggerGtm":false}); if (!window.jQuery) { !function(w, d, e, v, id, t, s) { if (d.getElementById(id)) return; t = d.createElement(e);t.async = !0;t.src = v;t.id = id; t.addEventListener('load', xEmbedScript); s = d.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t, s); }(window, document, 'script', 'https://cdn.orderonline.id/js/vendor/jquery.min.js', 'oo-embed-jquery'); } else { xEmbedScript(); } } catch (e) { xLogError(e); throw e; } </script> <!-- End OrderOnline Embed Code -->
+        </div>
+
+        <div class="bottom-bar">
+            <a href="#orderForm" onclick="document.getElementById('orderForm').scrollIntoView({behavior:'smooth'})" class="btn-buy">
+                Beli Sekarang
+            </a>
+        </div>
+        
+        
+
+        <!-- Lightbox Modal -->
+        <div id="lightbox" class="lightbox-overlay" onclick="if(event.target === this) closeLightbox()">
+            <div class="lightbox-content">
+                <div class="lightbox-close" onclick="closeLightbox()">&times;</div>
+                <img id="lb-img" class="lightbox-media" style="display:none">
+                <video id="lb-vid" class="lightbox-media" controls style="display:none"></video>
+            </div>
         </div>
     </div>
 
-    <!-- Lightbox -->
-    <div id="lightbox" class="lightbox">
-        <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
-        <img id="lightbox-image" class="lightbox-content" src="" alt="">
-    </div>
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
-        // Scroll animations
-        function checkScroll() {
-            const elements = document.querySelectorAll('.scroll-fade');
-            elements.forEach(element => {
-                const elementPosition = element.getBoundingClientRect().top;
-                const screenPosition = window.innerHeight / 1.3;
-                
-                if (elementPosition < screenPosition) {
-                    element.classList.add('show');
+        // Init Product Swiper - FORCED HEIGHT FIX
+        const swiper = new Swiper('.product-swiper', {
+            pagination: { el: '.swiper-pagination' },
+            loop: false, 
+            autoHeight: false, // Disabled autoHeight for image fix
+            // Optimized touch settings for native app feel
+            speed: 500,
+            resistance: true,
+            resistanceRatio: 0.85,
+            touchRatio: 1,
+            touchStartPreventDefault: false, // Critical for video touch
+            on: {
+                // FORCE Pause video when sliding away
+                slideChange: function () {
+                    const videos = document.querySelectorAll('video');
+                    videos.forEach(v => v.pause());
+                    const iframes = document.querySelectorAll('iframe');
+                    iframes.forEach(i => {
+                         const src = i.src;
+                         i.src = src; 
+                    });
                 }
+            }
+        });
+
+        // 1. DYNAMIC DATE LOGIC (Delivery Guarantee)
+        function updateDeliveryDate() {
+            const months = ["Jan", "Feb", "Mar", "Apr", "Mei", "Jun", "Jul", "Ags", "Sep", "Okt", "Nov", "Des"];
+            const today = new Date();
+            
+            // Start: Today + 3 days
+            const startDate = new Date(today);
+            startDate.setDate(today.getDate() + 3);
+            
+            // End: Today + 5 days
+            const endDate = new Date(today);
+            endDate.setDate(today.getDate() + 5);
+
+            const startStr = startDate.getDate();
+            const endStr = endDate.getDate();
+            const monthStr = months[endDate.getMonth()]; // Use end month
+
+            const dateString = startStr + " - " + endStr + " " + monthStr;
+            const el = document.getElementById('deliveryDate');
+            if(el) el.innerText = dateString;
+        }
+        updateDeliveryDate();
+
+        // 2. DYNAMIC REVIEW DATES
+        function updateReviewDates() {
+            const dateEls = document.querySelectorAll('.r-date-placeholder');
+            dateEls.forEach((el, index) => {
+                const d = new Date();
+                // Randomize 0 to 4 days ago
+                d.setDate(d.getDate() - Math.floor(Math.random() * 5)); 
+                
+                const year = d.getFullYear();
+                const month = String(d.getMonth() + 1).padStart(2, '0');
+                const day = String(d.getDate()).padStart(2, '0');
+                
+                const formattedDate = year + '-' + month + '-' + day;
+                const originalText = el.innerHTML.split('|')[1] || '';
+                el.innerHTML = formattedDate + ' | ' + originalText;
             });
+        }
+        updateReviewDates();
+
+        // 3. ACCORDION TOGGLE logic
+        function toggleAcc(header) {
+            const content = header.nextElementSibling;
+            const icon = header.querySelector('i');
             
-            // Sticky CTA
-            const stickyCTA = document.querySelector('.sticky-cta');
-            if (window.scrollY > 300) {
-                stickyCTA.classList.add('show');
+            if (content.classList.contains('open')) {
+                content.classList.remove('open');
+                icon.className = 'fas fa-chevron-down';
             } else {
-                stickyCTA.classList.remove('show');
+                content.classList.add('open');
+                icon.className = 'fas fa-chevron-up';
+            }
+        }
+
+        const defaultPrice = 188000;
+        
+        // Variant Switching Logic (Responsive + Dynamic Price + Order Box Update)
+        function changeVariant(btn, imageUrl, price, name) {
+            document.querySelectorAll('.v-card').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+
+            // Update Label
+            const label = document.getElementById('var-label');
+            if(label) label.innerText = name;
+
+            // Update Price
+            const priceEl = document.getElementById('displayPrice');
+            if(price && priceEl) {
+                priceEl.innerText = 'Rp ' + parseInt(price).toLocaleString('id-ID');
+            } else if(priceEl) {
+                 priceEl.innerText = 'Rp ' + defaultPrice.toLocaleString('id-ID');
+            }
+
+            // Update Image
+            if(imageUrl) {
+                const mainImg = document.getElementById('mainImage');
+                if(mainImg) {
+                   mainImg.src = imageUrl;
+                   const hasVideo = true;
+                   swiper.slideTo(hasVideo ? 1 : 0);
+                }
+            }
+
+            // Update Variant Confirmation Box
+            const box = document.getElementById('variant-confirm');
+            const boxName = document.getElementById('vc-name');
+            const boxImg = document.getElementById('vc-img');
+            
+            if(box && boxName) {
+                box.style.display = 'flex';
+                boxName.innerText = name;
+                if(boxImg && imageUrl) boxImg.src = imageUrl;
             }
         }
         
-        window.addEventListener('scroll', checkScroll);
-        window.addEventListener('load', checkScroll);
-        
-        // Countdown timer
-        function updateCountdown() {
-            const now = new Date();
-            const endOfDay = new Date();
-            endOfDay.setHours(23, 59, 59, 999);
+        // Lightbox Logic
+        function openLightbox(url) {
+            const lb = document.getElementById('lightbox');
+            const img = document.getElementById('lb-img');
+            const vid = document.getElementById('lb-vid');
             
-            const diff = endOfDay - now;
+            img.style.display = 'none';
+            vid.style.display = 'none';
+            vid.pause();
             
-            const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-            const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+            lb.classList.add('active');
             
-            document.getElementById('countdown-hours').textContent = hours.toString().padStart(2, '0');
-            document.getElementById('countdown-minutes').textContent = minutes.toString().padStart(2, '0');
-            document.getElementById('countdown-seconds').textContent = seconds.toString().padStart(2, '0');
-        }
-        
-        setInterval(updateCountdown, 1000);
-        updateCountdown();
-        
-        // Lightbox
-        function openLightbox(src, type = 'image') {
-            const lightbox = document.getElementById('lightbox');
-            const lightboxContent = document.getElementById('lightbox-image');
-            
-            if (type === 'video') {
-                lightboxContent.innerHTML = `
-                    <video class="lightbox-content" controls autoplay>
-                        <source src="${src}" type="video/mp4">
-                    </video>
-                `;
+            if (url.includes('.mp4')) {
+                vid.src = url;
+                vid.style.display = 'block';
+                vid.play();
             } else {
-                lightboxContent.innerHTML = `<img class="lightbox-content" src="${src}" alt="">`;
+                img.src = url;
+                img.style.display = 'block';
             }
-            
-            lightbox.style.display = 'flex';
-            document.body.style.overflow = 'hidden';
         }
         
         function closeLightbox() {
-            const lightbox = document.getElementById('lightbox');
-            const video = lightbox.querySelector('video');
-            if (video) {
-                video.pause();
-            }
-            lightbox.style.display = 'none';
-            document.body.style.overflow = 'auto';
+            const lb = document.getElementById('lightbox');
+            lb.classList.remove('active');
+            const vid = document.getElementById('lb-vid');
+            vid.pause();
+            vid.src = "";
         }
+
+        // Timer Logic
         
-        // Close lightbox when clicking outside the image
-        document.getElementById('lightbox').addEventListener('click', function(e) {
-            if (e.target === this) {
-                closeLightbox();
-            }
-        });
-        
-        // OrderOnline Embed Script
-        if (typeof xLogError != 'function') {
-            var xLogError = function (error) {
-                var req = new XMLHttpRequest();
-                var payload = JSON.stringify({
-                    url: document.location.href,
-                    line: error.line,
-                    stack: error.stack
-                });
-                var params = 'message=' + encodeURIComponent(error.name) + '&payload=' + encodeURIComponent(payload) + '&type=embed&level=error';
-                req.open('POST', 'https://api.orderonline.id/log', true);
-                req.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
-                req.send(params);
-            };
+        function startTimer(duration) {
+            let timer = duration * 60;
+            const h = document.getElementById('fs-h');
+            const m = document.getElementById('fs-m');
+            const s = document.getElementById('fs-s');
+            
+            setInterval(function () {
+                let hours = parseInt(timer / 3600, 10);
+                let minutes = parseInt((timer % 3600) / 60, 10);
+                let seconds = parseInt(timer % 60, 10);
+
+                hours = hours < 10 ? "0" + hours : hours;
+                minutes = minutes < 10 ? "0" + minutes : minutes;
+                seconds = seconds < 10 ? "0" + seconds : seconds;
+
+                if(h) h.textContent = hours;
+                if(m) m.textContent = minutes;
+                if(s) s.textContent = seconds;
+
+                if (--timer < 0) {
+                    timer = duration * 60;
+                }
+            }, 1000);
         }
+        startTimer(150);
         
-        try {
-            if (typeof xEmbedScript != 'function') {
-                var xEmbedScript = function () {
-                    !function(w, d, e, v, id, t, s) {
-                        if (d.getElementById(id)) return;
-                        t = d.createElement(e);t.async = !0;t.src = v;t.id = id;
-                        s = d.getElementsByTagName(e)[0];
-                        s.parentNode.insertBefore(t, s);
-                    }(window, document, 'script', 'https://cdn.orderonline.id/js/embed-v2-slim.min.js?v=8.0.4', 'oo-embed-js');
-                };
-            }
-            
-            if (typeof xEmbedInit != 'function') {
-                var xEmbedInit = function (w, n) {
-                    if (w.ooe) return;
-                    n = w.ooe = function() {
-                        n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments)
-                    };
-                    if (!w._ooe) w._ooe = n;
-                    n.push = n;n.loaded = !0;n.version = '8.0.4';n.queue = [];
-                };
-            }
-            
-            xEmbedInit(window);
-            ooe('setup', 'redirect', 'https://mila.orderonline.id');
-            ooe('init', '5f1a7b8fa9bf807da24d83bb', '6868caca95676942920ffc31', '6868caca95676942920ffc32', 'oo-embed-form-maternity-bra-1426', {
-                "mode":"page",
-                "action":"Klik untuk pemesanan",
-                "title":"Form Pemesanan",
-                "triggerPixel":true,
-                "triggerGtm":false
-            });
-            
-            if (!window.jQuery) {
-                !function(w, d, e, v, id, t, s) {
-                    if (d.getElementById(id)) return;
-                    t = d.createElement(e);t.async = !0;t.src = v;t.id = id;
-                    t.addEventListener('load', xEmbedScript);
-                    s = d.getElementsByTagName(e)[0];
-                    s.parentNode.insertBefore(t, s);
-                }(window, document, 'script', 'https://cdn.orderonline.id/js/vendor/jquery.min.js', 'oo-embed-jquery');
-            } else {
-                xEmbedScript();
-            }
-        } catch (e) {
-            xLogError(e);
-            throw e;
-        }
+
+        // Social Proof Logic
+        
     </script>
 </body>
 </html>
